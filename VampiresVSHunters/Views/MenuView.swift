@@ -1,15 +1,15 @@
 //
-//  StarterView.swift
+//  StartGameView.swift
 //  VampiresVSHunters
 //
-//  Created by deshollow on 12.01.2024.
+//  Created by deshollow on 17.01.2024.
 //
 
 import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-Text("Next")
+        Text("Меню: тут будет таблица с выбором настроек")
     }
 }
 

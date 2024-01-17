@@ -31,10 +31,11 @@ struct HowToPlayView: View {
                 .padding(.bottom, 30)
             }
         }
-        NavigationLink( "Меню", destination: RulesView())
+        NavigationLink( "Меню", destination: MainView())
             .font(.title)
             .foregroundColor(.blue)
             .padding(.bottom, 100)
+            .navigationBarBackButtonHidden()
     }
 }
 
@@ -104,7 +105,7 @@ let cardData = [
          textColor: .white),
     Card(title: "Задавайте друг другу вопросы!",
          text: "Нажмите на иконку в меню, чтобы прочесть правила",
-         image: "questionmark.bubble",
+         image: "questionmark.bubble.fill",
          imageColor: .blue,
          cardColor: .black,
          textColor: .white)
