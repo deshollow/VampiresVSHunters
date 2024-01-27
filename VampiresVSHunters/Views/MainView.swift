@@ -15,6 +15,7 @@ struct MainView: View {
                     Image(systemName: "menucard.fill")
                     Text("Меню")
                 }
+                
             StartView()
                 .tabItem {
                     Image(systemName: "arrow.right.circle.fill")

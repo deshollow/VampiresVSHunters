@@ -16,22 +16,25 @@ struct ContentView: View {
             VStack {
                 Text("Добро пожаловать в игру!")
                     .font(.headline)
-                    .padding()
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color(.black).opacity(0.8))
                 Image("OpenScreenLogo")
                     .resizable()
                     .frame(width: 400, height: 260, alignment: .center)
                 NavigationLink(
                     "Войти", destination: HowToPlayView()
                 )
-                .font(.title)
                 .foregroundColor(.blue)
-                .padding(.bottom, 100)
+                .font(.title)
+                .padding(.bottom, 80)
                 Text("быть вампиром или охотником, вот в чем вопрос...")
                     .onTapGesture {
                     }
                     .animation(.spring(duration: 2, bounce: 0.8, blendDuration: 3))
             }
             .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(#colorLiteral(red:0.8980392157, green: 0.9333333333, blue: 1, alpha: 1)))
         }
     }
 }

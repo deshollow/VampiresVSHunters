@@ -22,20 +22,21 @@ struct HowToPlayView: View {
                                            y: 10,
                                            z: 0)
                                 )
-                            
                         }
                         .frame(width: 340, height: 500)
                     }
                 }
-                .padding(30)
-                .padding(.bottom, 30)
+                .padding(28)
+                .padding(.bottom, 150)
             }
+            NavigationLink( "Меню", destination: MainView())
+                .font(.title)
+                .foregroundColor(.blue)
+                .navigationBarBackButtonHidden()
+                .padding(.top, 500)
         }
-        NavigationLink( "Меню", destination: MainView())
-            .font(.title)
-            .foregroundColor(.blue)
-            .padding(.bottom, 100)
-            .navigationBarBackButtonHidden()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(#colorLiteral(red:0.8980392157, green: 0.9333333333, blue: 1, alpha: 1)))
     }
 }
 
@@ -43,6 +44,8 @@ struct HowToPlayView: View {
     HowToPlayView()
         .accessibilityIdentifier("howtoplay")
 }
+
+//MARK: Сard design
 
 struct HowToPlayCardView: View {
     var card: Card
@@ -71,7 +74,7 @@ struct HowToPlayCardView: View {
     }
 }
 
-//MARK: HowToPlay Card structure
+//MARK: Card structure
 
 struct Card: Identifiable {
     var id = UUID()
