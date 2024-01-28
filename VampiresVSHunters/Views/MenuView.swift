@@ -12,6 +12,8 @@ struct MenuView: View {
     @State private var vampiresCount = 3.0
     
     @State private var showingPlayersView = false
+    @State private var showingLocationView = false
+    @State private var showingTimersView = false
     
     var body: some View {
         VStack {
@@ -29,17 +31,27 @@ struct MenuView: View {
                 }
                 .padding(30)
                 VStack(spacing: 30) {
-                    Button(action: {
-                        showingPlayersView.toggle()
-                    }, label: {
-                        ModifiedButtonVIew(image: "person.fill")
-                    })
-                    Button(action: {}, label: {
-                        ModifiedButtonVIew(image: "photo")
-                    })
-                    Button(action: {}, label: {
-                        ModifiedButtonVIew(image: "alarm")
-                    })
+                    NavigationLink(isActive: $showingPlayersView) {
+                        PlayersView()
+                    } label: {
+                        ModifiedButtonVIew(image: "person.fill") {
+                            showingPlayersView.toggle()
+                        }
+                    }
+                    NavigationLink(isActive: $showingLocationView) {
+                        LocationView()
+                    } label: {
+                        ModifiedButtonVIew(image: "photo") {
+                            showingLocationView.toggle()
+                        }
+                    }
+                    NavigationLink(isActive: $showingTimersView) {
+                        TimerView()
+                    } label: {
+                        ModifiedButtonVIew(image: "alarm") {
+                            showingTimersView.toggle()
+                        }
+                    }
                 }
                 Spacer()
             }
@@ -102,9 +114,10 @@ struct MenuView: View {
 
 struct ModifiedButtonVIew: View {
     var image: String
+    var action: (()-> Void)
     
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: action, label: {
             Image(systemName: image)
                 .font(.system(size: 25, weight: .bold))
                 .padding(.all, 25)
