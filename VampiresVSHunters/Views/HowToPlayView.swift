@@ -29,7 +29,7 @@ struct HowToPlayView: View {
                 .padding(28)
                 .padding(.bottom, 150)
             }
-            NavigationLink( "Меню", destination: MainView())
+            NavigationLink( "Меню", destination: CustomTabView())
                 .font(.title)
                 .foregroundColor(.blue)
                 .navigationBarBackButtonHidden()

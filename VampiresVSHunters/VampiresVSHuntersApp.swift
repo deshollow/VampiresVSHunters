@@ -11,7 +11,7 @@ import SwiftUI
 struct VampiresVSHuntersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OpenView()
         }
     }
 }

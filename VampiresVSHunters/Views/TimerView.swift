@@ -28,7 +28,12 @@ struct TimerView: View {
                 .font(.title)
                 .foregroundColor(.blue)
                 .padding(.bottom, 100)
-                .navigationBarBackButtonHidden()
+            }
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CustomBackButtonView()
+                }
             }
         }
     }

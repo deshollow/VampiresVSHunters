@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OpenView: View {
     
     @State private var showText = false
     
@@ -40,7 +40,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    OpenView()
 }
 
 //draft

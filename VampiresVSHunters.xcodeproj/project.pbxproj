@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A1E165E2B4F03F500764C65 /* VampiresVSHuntersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E165D2B4F03F500764C65 /* VampiresVSHuntersApp.swift */; };
-		1A1E16602B4F03F500764C65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E165F2B4F03F500764C65 /* ContentView.swift */; };
+		1A1E16602B4F03F500764C65 /* OpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E165F2B4F03F500764C65 /* OpenView.swift */; };
 		1A1E16622B4F03F700764C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E16612B4F03F700764C65 /* Assets.xcassets */; };
 		1A1E16652B4F03F700764C65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E16642B4F03F700764C65 /* Preview Assets.xcassets */; };
+		1A23F8012BE5123200E8A5E4 /* CustomBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */; };
 		1A8892BD2B57FAFE0092FD07 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892BC2B57FAFE0092FD07 /* MenuView.swift */; };
 		1A8892C12B5838910092FD07 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C02B5838900092FD07 /* RulesView.swift */; };
 		1A8892C32B5839D70092FD07 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C22B5839D70092FD07 /* StartView.swift */; };
@@ -20,15 +21,16 @@
 		1AA41D3B2B530E7F00281B8F /* RulesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */; };
 		1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB359792B7F93280033845D /* TimerModel.swift */; };
 		1AC70B892B514BA30075AE3E /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B882B514BA30075AE3E /* HowToPlayView.swift */; };
-		1AC70B8D2B51A8FB0075AE3E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B8C2B51A8FB0075AE3E /* MainView.swift */; };
+		1AC70B8D2B51A8FB0075AE3E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A1E165A2B4F03F500764C65 /* VampiresVSHunters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VampiresVSHunters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1E165D2B4F03F500764C65 /* VampiresVSHuntersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampiresVSHuntersApp.swift; sourceTree = "<group>"; };
-		1A1E165F2B4F03F500764C65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A1E165F2B4F03F500764C65 /* OpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenView.swift; sourceTree = "<group>"; };
 		1A1E16612B4F03F700764C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1E16642B4F03F700764C65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonView.swift; sourceTree = "<group>"; };
 		1A8892BC2B57FAFE0092FD07 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		1A8892C02B5838900092FD07 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		1A8892C22B5839D70092FD07 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesDataStore.swift; sourceTree = "<group>"; };
 		1AB359792B7F93280033845D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		1AC70B882B514BA30075AE3E /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
-		1AC70B8C2B51A8FB0075AE3E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +94,16 @@
 		1AC70B852B513F310075AE3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A1E165F2B4F03F500764C65 /* ContentView.swift */,
+				1A1E165F2B4F03F500764C65 /* OpenView.swift */,
 				1AC70B882B514BA30075AE3E /* HowToPlayView.swift */,
-				1AC70B8C2B51A8FB0075AE3E /* MainView.swift */,
+				1A8892BC2B57FAFE0092FD07 /* MenuView.swift */,
 				1A8892C02B5838900092FD07 /* RulesView.swift */,
 				1A8892C22B5839D70092FD07 /* StartView.swift */,
-				1A8892BC2B57FAFE0092FD07 /* MenuView.swift */,
 				1A8892C82B5D17860092FD07 /* PlayersView.swift */,
 				1A8892C62B5D17770092FD07 /* LocationView.swift */,
 				1A8892C42B5D17580092FD07 /* TimerView.swift */,
+				1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */,
+				1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,11 +198,12 @@
 				1A8892C32B5839D70092FD07 /* StartView.swift in Sources */,
 				1AC70B892B514BA30075AE3E /* HowToPlayView.swift in Sources */,
 				1AA41D3B2B530E7F00281B8F /* RulesDataStore.swift in Sources */,
-				1AC70B8D2B51A8FB0075AE3E /* MainView.swift in Sources */,
+				1AC70B8D2B51A8FB0075AE3E /* CustomTabView.swift in Sources */,
 				1A8892BD2B57FAFE0092FD07 /* MenuView.swift in Sources */,
+				1A23F8012BE5123200E8A5E4 /* CustomBackButtonView.swift in Sources */,
 				1A8892C12B5838910092FD07 /* RulesView.swift in Sources */,
 				1A8892C72B5D17770092FD07 /* LocationView.swift in Sources */,
-				1A1E16602B4F03F500764C65 /* ContentView.swift in Sources */,
+				1A1E16602B4F03F500764C65 /* OpenView.swift in Sources */,
 				1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */,
 				1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */,
 				1A1E165E2B4F03F500764C65 /* VampiresVSHuntersApp.swift in Sources */,

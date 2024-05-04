@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct LocationView: View {
+    
     var body: some View {
-        Text("LocationView!")
+        VStack {
+            Text("Location View")
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                CustomBackButtonView()
+            }
+        }
     }
 }
 
