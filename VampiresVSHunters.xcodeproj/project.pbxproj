@@ -19,6 +19,7 @@
 		1A8892C72B5D17770092FD07 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C62B5D17770092FD07 /* LocationView.swift */; };
 		1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C82B5D17860092FD07 /* PlayersView.swift */; };
 		1AA41D3B2B530E7F00281B8F /* RulesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */; };
+		1AA8DA642BE8EEF8004CA0DB /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */; };
 		1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB359792B7F93280033845D /* TimerModel.swift */; };
 		1AC70B892B514BA30075AE3E /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B882B514BA30075AE3E /* HowToPlayView.swift */; };
 		1AC70B8D2B51A8FB0075AE3E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */; };
@@ -38,6 +39,7 @@
 		1A8892C62B5D17770092FD07 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		1A8892C82B5D17860092FD07 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesDataStore.swift; sourceTree = "<group>"; };
+		1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
 		1AB359792B7F93280033845D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		1AC70B882B514BA30075AE3E /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				1A1E165D2B4F03F500764C65 /* VampiresVSHuntersApp.swift */,
 				1AC70B852B513F310075AE3E /* Views */,
+				1AA8DA622BE65091004CA0DB /* CustomViews */,
 				1AC70B862B5140130075AE3E /* Services */,
 				1AC70B872B51402F0075AE3E /* Models */,
 				1A1E16612B4F03F700764C65 /* Assets.xcassets */,
@@ -91,6 +94,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1AA8DA622BE65091004CA0DB /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */,
+				1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		1AC70B852B513F310075AE3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +114,6 @@
 				1A8892C82B5D17860092FD07 /* PlayersView.swift */,
 				1A8892C62B5D17770092FD07 /* LocationView.swift */,
 				1A8892C42B5D17580092FD07 /* TimerView.swift */,
-				1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */,
-				1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1AB359792B7F93280033845D /* TimerModel.swift */,
+				1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 				1A23F8012BE5123200E8A5E4 /* CustomBackButtonView.swift in Sources */,
 				1A8892C12B5838910092FD07 /* RulesView.swift in Sources */,
 				1A8892C72B5D17770092FD07 /* LocationView.swift in Sources */,
+				1AA8DA642BE8EEF8004CA0DB /* TagViewModel.swift in Sources */,
 				1A1E16602B4F03F500764C65 /* OpenView.swift in Sources */,
 				1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */,
 				1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */,

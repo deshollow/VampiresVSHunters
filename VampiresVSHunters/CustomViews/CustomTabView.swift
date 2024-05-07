@@ -20,7 +20,7 @@ struct CustomTabView: View {
             StartView()
                 .tabItem {
                     Image(systemName: "arrow.right.circle.fill")
-                    Text("Готово")
+                    Text("Играть")
                 }
             RulesView()
                 .tabItem {

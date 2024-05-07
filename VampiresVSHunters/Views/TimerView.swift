@@ -22,13 +22,15 @@ struct TimerView: View {
                     }
                 }.pickerStyle(WheelPickerStyle())
                     .frame(width: 300, height: 300)
-                Button("Готово") {
+                Button("Сохранить") {
                     
                 }
                 .font(.title)
                 .foregroundColor(.blue)
                 .padding(.bottom, 100)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(#colorLiteral(red:0.8980392157, green: 0.9333333333, blue: 1, alpha: 1)))
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

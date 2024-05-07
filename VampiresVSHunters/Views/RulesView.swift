@@ -16,7 +16,7 @@ struct RulesView: View {
                 List {
                     HStack {
                         Spacer()
-                        Image("MenuLogo")
+                        Image("RulesLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(.horizontal, 110)
