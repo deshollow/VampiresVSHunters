@@ -20,7 +20,7 @@
 		1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C82B5D17860092FD07 /* PlayersView.swift */; };
 		1AA41D3B2B530E7F00281B8F /* RulesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */; };
 		1AA8DA642BE8EEF8004CA0DB /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */; };
-		1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB359792B7F93280033845D /* TimerModel.swift */; };
+		1AB3597A2B7F93280033845D /* TimerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB359792B7F93280033845D /* TimerSettings.swift */; };
 		1AC70B892B514BA30075AE3E /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B882B514BA30075AE3E /* HowToPlayView.swift */; };
 		1AC70B8D2B51A8FB0075AE3E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 		1A8892C82B5D17860092FD07 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesDataStore.swift; sourceTree = "<group>"; };
 		1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
-		1AB359792B7F93280033845D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		1AB359792B7F93280033845D /* TimerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettings.swift; sourceTree = "<group>"; };
 		1AC70B882B514BA30075AE3E /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		1AC70B8C2B51A8FB0075AE3E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +129,7 @@
 		1AC70B872B51402F0075AE3E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1AB359792B7F93280033845D /* TimerModel.swift */,
+				1AB359792B7F93280033845D /* TimerSettings.swift */,
 				1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */,
 			);
 			path = Models;
@@ -216,7 +216,7 @@
 				1A8892C72B5D17770092FD07 /* LocationView.swift in Sources */,
 				1AA8DA642BE8EEF8004CA0DB /* TagViewModel.swift in Sources */,
 				1A1E16602B4F03F500764C65 /* OpenView.swift in Sources */,
-				1AB3597A2B7F93280033845D /* TimerModel.swift in Sources */,
+				1AB3597A2B7F93280033845D /* TimerSettings.swift in Sources */,
 				1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */,
 				1A1E165E2B4F03F500764C65 /* VampiresVSHuntersApp.swift in Sources */,
 			);

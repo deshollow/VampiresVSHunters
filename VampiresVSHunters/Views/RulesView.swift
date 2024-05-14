@@ -44,18 +44,13 @@ struct RulesView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
     RulesView()
 }
-
-
-
-
-
-
 
 
 //import SwiftUI

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TagItem: Identifiable, Hashable {
+    
     var id = UUID().uuidString
     var name: String
     var size: CGFloat = 0
@@ -33,6 +34,7 @@ extension String {
 
 struct PlayersView: View {
     
+    @State private var showingAlert = false
     @StateObject var tagsViewModel = TagsViewModel()
     
     var body: some View {
@@ -65,7 +67,6 @@ struct PlayersView: View {
                             }
                         }
                     }
-                    
                     VStack(alignment: .leading) {
                         ForEach(tagsViewModel.rows, id: \.self) { rows in
                             HStack(spacing: 15) {
@@ -101,7 +102,19 @@ struct PlayersView: View {
                         .animation(.bouncy)
                     Spacer()
                     Button("Сохранить") {
-                        
+                        if tagsViewModel.tags.count < 3 {
+                            showingAlert = true //alarm
+                        } else if tagsViewModel.tags.count > 10 {
+                            showingAlert = true //alarm
+                        } else {
+                            print("its ok") //save data realization
+                        }
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Неверное количество игроков"),
+                              message: Text("В игре может быть от 3 до 10 участников"),
+                              dismissButton: .cancel(Text("Ок")))
+                              
                     }
                     .font(.title)
                     .foregroundColor(.blue)
