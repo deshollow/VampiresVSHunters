@@ -10,7 +10,6 @@ import SwiftUI
 struct MenuView: View {
     
     @State private var vampiresCount = 3.0
-    
     @State private var showingPlayersView = false
     @State private var showingLocationView = false
     @State private var showingTimerView = false
@@ -113,6 +112,7 @@ struct MenuView: View {
 //MARK: Buttons design
 
 struct ModifiedButtonVIew: View {
+    
     var image: String
     var action: (()-> Void)
     

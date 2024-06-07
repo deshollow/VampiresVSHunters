@@ -8,7 +8,6 @@
 final class RulesDataStore {
     
     static let shared = RulesDataStore()
-    
     let headers = [
     "С чего начать?",
     "И что дальше?",

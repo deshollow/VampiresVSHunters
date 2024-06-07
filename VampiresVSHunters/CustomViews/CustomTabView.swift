@@ -40,34 +40,3 @@ struct CustomTabView: View {
 #Preview {
     CustomTabView()
 }
-
-
-
-//import SwiftUI
-//
-//struct CustomTabView: View {
-//    
-//    var body: some View {
-//        TabView {
-//            MenuView()
-//                .tabItem {
-//                    Image(systemName: "menucard.fill")
-//                    Text("Меню")
-//                }
-//            StartView()
-//                .tabItem {
-//                    Image(systemName: "arrow.right.circle.fill")
-//                    Text("Готово")
-//                }
-//            RulesView()
-//                .tabItem {
-//                    Image(systemName: "questionmark.bubble")
-//                    Text("Правила")
-//                }
-//        }
-//    }
-//}
-//
-//#Preview {
-//    CustomTabView()
-//}

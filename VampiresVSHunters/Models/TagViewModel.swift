@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
+import Combine
 
 class TagsViewModel: ObservableObject {
     
     @Published var tag: String = ""
-    
     @Published var rows: [[TagItem]] = []
-    
-    @Published var tags: [TagItem] = [
+    @Published var tags: [TagItem] = [ //default players names
         TagItem(name: "Илья"),
         TagItem(name: "Мира"),
         TagItem(name: "Юля"),
@@ -63,4 +62,5 @@ class TagsViewModel: ObservableObject {
         self.rows = rows
     }
 }
+
 

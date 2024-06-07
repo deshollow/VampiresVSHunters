@@ -48,6 +48,7 @@ struct HowToPlayView: View {
 //MARK: Сard design
 
 struct HowToPlayCardView: View {
+    
     var card: Card
     
     var body: some View {
@@ -77,6 +78,7 @@ struct HowToPlayCardView: View {
 //MARK: Card structure
 
 struct Card: Identifiable {
+    
     var id = UUID()
     var title: String
     var text: String
@@ -85,6 +87,8 @@ struct Card: Identifiable {
     var cardColor: Color
     var textColor: Color
 }
+
+//MARK: Card data
 
 let cardData = [
     Card(
