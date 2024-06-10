@@ -12,6 +12,8 @@
 		1A1E16622B4F03F700764C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E16612B4F03F700764C65 /* Assets.xcassets */; };
 		1A1E16652B4F03F700764C65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E16642B4F03F700764C65 /* Preview Assets.xcassets */; };
 		1A23F8012BE5123200E8A5E4 /* CustomBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */; };
+		1A4912502C13206E0057E724 /* PlayersDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A49124E2C13206E0057E724 /* PlayersDataModel.xcdatamodeld */; };
+		1A4912592C16001F0057E724 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4912582C16001F0057E724 /* CoreDataManager.swift */; };
 		1A8892BD2B57FAFE0092FD07 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892BC2B57FAFE0092FD07 /* MenuView.swift */; };
 		1A8892C12B5838910092FD07 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C02B5838900092FD07 /* RulesView.swift */; };
 		1A8892C32B5839D70092FD07 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8892C22B5839D70092FD07 /* StartView.swift */; };
@@ -32,6 +34,8 @@
 		1A1E16612B4F03F700764C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1E16642B4F03F700764C65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A23F8002BE5123200E8A5E4 /* CustomBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonView.swift; sourceTree = "<group>"; };
+		1A49124F2C13206E0057E724 /* PlayersDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayersDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1A4912582C16001F0057E724 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1A8892BC2B57FAFE0092FD07 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		1A8892C02B5838900092FD07 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		1A8892C22B5839D70092FD07 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -77,8 +81,6 @@
 			children = (
 				1A1E165D2B4F03F500764C65 /* VampiresVSHuntersApp.swift */,
 				1AC70B852B513F310075AE3E /* Views */,
-				1AA8DA622BE65091004CA0DB /* CustomViews */,
-				1AC70B862B5140130075AE3E /* Services */,
 				1AC70B872B51402F0075AE3E /* Models */,
 				1A1E16612B4F03F700764C65 /* Assets.xcassets */,
 				1A1E16632B4F03F700764C65 /* Preview Content */,
@@ -92,6 +94,16 @@
 				1A1E16642B4F03F700764C65 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A4912532C132CCB0057E724 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A49124E2C13206E0057E724 /* PlayersDataModel.xcdatamodeld */,
+				1A4912582C16001F0057E724 /* CoreDataManager.swift */,
+				1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		1AA8DA622BE65091004CA0DB /* CustomViews */ = {
@@ -114,16 +126,9 @@
 				1A8892C82B5D17860092FD07 /* PlayersView.swift */,
 				1A8892C62B5D17770092FD07 /* LocationView.swift */,
 				1A8892C42B5D17580092FD07 /* TimerView.swift */,
+				1AA8DA622BE65091004CA0DB /* CustomViews */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1AC70B862B5140130075AE3E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1AA41D3A2B530E7F00281B8F /* RulesDataStore.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		1AC70B872B51402F0075AE3E /* Models */ = {
@@ -131,6 +136,7 @@
 			children = (
 				1AB359792B7F93280033845D /* TimerSettings.swift */,
 				1AA8DA632BE8EEF8004CA0DB /* TagViewModel.swift */,
+				1A4912532C132CCB0057E724 /* Data */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				1A8892C52B5D17580092FD07 /* TimerView.swift in Sources */,
 				1A8892C32B5839D70092FD07 /* StartView.swift in Sources */,
 				1AC70B892B514BA30075AE3E /* HowToPlayView.swift in Sources */,
+				1A4912502C13206E0057E724 /* PlayersDataModel.xcdatamodeld in Sources */,
 				1AA41D3B2B530E7F00281B8F /* RulesDataStore.swift in Sources */,
 				1AC70B8D2B51A8FB0075AE3E /* CustomTabView.swift in Sources */,
 				1A8892BD2B57FAFE0092FD07 /* MenuView.swift in Sources */,
@@ -218,6 +225,7 @@
 				1A1E16602B4F03F500764C65 /* OpenView.swift in Sources */,
 				1AB3597A2B7F93280033845D /* TimerSettings.swift in Sources */,
 				1A8892C92B5D17860092FD07 /* PlayersView.swift in Sources */,
+				1A4912592C16001F0057E724 /* CoreDataManager.swift in Sources */,
 				1A1E165E2B4F03F500764C65 /* VampiresVSHuntersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +442,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A49124E2C13206E0057E724 /* PlayersDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A49124F2C13206E0057E724 /* PlayersDataModel.xcdatamodel */,
+			);
+			currentVersion = 1A49124F2C13206E0057E724 /* PlayersDataModel.xcdatamodel */;
+			path = PlayersDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A1E16522B4F03F500764C65 /* Project object */;
 }
