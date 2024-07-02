@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct TagItem: Identifiable, Hashable {
     
     var id = UUID().uuidString
     var name: String
     var size: CGFloat = 0
+    var managedObjectId: NSManagedObjectID
 }
 
 extension UIScreen {
@@ -34,7 +36,7 @@ extension String {
 
 struct PlayersView: View {
     
-    @State private var showingAlert = false
+//    @State private var showingAlert = false
     @StateObject private var tagsViewModel = TagsViewModel()
     
     var body: some View {
@@ -80,7 +82,7 @@ struct PlayersView: View {
                                                 Capsule()
                                                     .fill(.gray.opacity(0.1))
                                                 Button{
-                                                    tagsViewModel.removeTag(by: row.id)
+                                                    tagsViewModel.removeTag(by: row.managedObjectId)
                                                 } label: {
                                                     Image(systemName: "xmark")
                                                         .frame(width: 15,
@@ -101,21 +103,21 @@ struct PlayersView: View {
                         }
                         .animation(.bouncy)
                     Spacer()
-                    Button("Сохранить") {
-                        if tagsViewModel.tags.count < 3 {
-                            showingAlert = true
-                        } else if tagsViewModel.tags.count > 10 {
-                            showingAlert = true
-                        } else {
-                            print("its ok")
-                        }
-                    }
-                    .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("Неверное количество игроков"),
-                              message: Text("В игре может быть от 3 до 10 участников"),
-                              dismissButton: .cancel(Text("Ок")))
-                        
-                    }
+//                    Button("Сохранить") { //старая кнопка с алертом
+//                        if tagsViewModel.tags.count < 3 {
+//                            showingAlert = true
+//                        } else if tagsViewModel.tags.count > 10 {
+//                            showingAlert = true
+//                        } else {
+//                            print("its ok")
+//                        }
+//                    }
+//                    .alert(isPresented: $showingAlert) {
+//                        Alert(title: Text("Неверное количество игроков"),
+//                              message: Text("В игре может быть от 3 до 10 участников"),
+//                              dismissButton: .cancel(Text("Ок")))
+//                        
+//                    }
                     .font(.title)
                     .foregroundColor(.blue)
                     .padding(.bottom, 100)
@@ -125,15 +127,19 @@ struct PlayersView: View {
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    CustomBackButtonView()
+//                    CustomBackButtonView() //обычная кнопка назад с крестиком
+                    CustomBackButtonViewForPlayersView(tagsViewModel: tagsViewModel)
                 }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(#colorLiteral(red:0.8980392157, green: 0.9333333333, blue: 1, alpha: 1)))
     }
+    
+    
 }
 
 #Preview {
     PlayersView()
 }
+

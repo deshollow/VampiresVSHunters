@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct VampiresVSHuntersApp: App {
+    
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
             OpenView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
